@@ -1,2 +1,2 @@
 # akawebsite
-## Code for AKA Wordpress Theme
+## Code for AKA Website Templates
