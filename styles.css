@@ -34,10 +34,13 @@ p{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 40px;
+  height: 60px;
   border-bottom: 1px solid #5d6063;
-  padding: 10px; /*fix this*/
   background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   position: fixed;
   top: 0;
@@ -45,10 +48,15 @@ p{
   z-index: 2;
 }
 
-.main-header h1 {
-  font-family: serif;
-  font-size: 0.45em;
-  font-style: italic;
+.logo {
+  display: block;
+  width: 40px;
+  height: 30px;
+}
+
+.main-nav img{
+  width: 30px;
+  height: 30px;
 }
 
 .main-footer {
@@ -57,24 +65,35 @@ p{
   justify-content: flex-end;
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font-size: 0.8em;
+  line-height: 1.5em;
 
   border-top: 1px solid ##5d6063;
   background-color: #FFF139;
 }
 
-.main-footer div{
+.main-footer nav{
+  margin-bottom: 20px;
 }
 
 .copy{
-margin-bottom: 20px;
+
   }
 
 .main-footer li{
   display: inline;
+  margin-left: 1em;
+}
+.main-footer li:first-of-type{
+  margin-left: 0;
 }
 
 .page{
-  margin-top: 40px; /*height of page main header*/
+  margin-top: 60px; /*height of page main header*/
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
@@ -91,6 +110,11 @@ margin-bottom: 20px;
 .film-headline-image {
   border-bottom: 10px solid #5d6063;
   margin-bottom: 10px;
+  padding-bottom: 0.6em;
+}
+
+.film-headline-image h1 {
+  padding-top: 0.2em;
 }
 
 .film-headline-image img {
@@ -114,4 +138,20 @@ margin-bottom: 20px;
   font-size: 0.8em;
   line-height: 1.5em;
   font-style: italic;
+}
+
+.film-description aside{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #efefef;
+  margin-bottom: 20px;
+}
+
+.film-description aside h2{
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
+.filmteaser {
+
 }
