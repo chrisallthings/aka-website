@@ -5,17 +5,18 @@
 }
 
 body{
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 20px;
 
   color:#5d6063;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #FEFEFE;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: 'Oswald', sans-serif;
   line-height: 1.2em;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -106,6 +107,8 @@ p{
 .film-description {
   background-color: white;
   max-width: 580px;
+  display: flex;
+  flex-direction: column;
   }
 
 .film-headline-image {
@@ -185,4 +188,9 @@ p{
   position: absolute;
   bottom: 20px;
   max-width: 90%;
+}
+.pre-headline {
+  font-size: 0.8em;
+  line-height: 1.5em;
+  font-style: italic;
 }
