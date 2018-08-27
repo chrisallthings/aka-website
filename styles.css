@@ -11,6 +11,12 @@ body{
   color:#5d6063;
   font-family: 'Open Sans', sans-serif;
   background-color: #FEFEFE;
+
+  /*Make Footer Stick to bottom*/
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h1, h2, h3, h4, h5, h6 {
