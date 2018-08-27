@@ -106,9 +106,9 @@ p{
 
 .film-description {
   background-color: white;
-  max-width: 580px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-flow: column;
   }
 
 .film-headline-image {
@@ -189,8 +189,22 @@ p{
   bottom: 20px;
   max-width: 90%;
 }
+
 .pre-headline {
   font-size: 0.8em;
   line-height: 1.5em;
   font-style: italic;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {}
+
+  /* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
 }
