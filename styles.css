@@ -82,10 +82,6 @@ p{
   margin-bottom: 10px;
 }
 
-.copy{
-
-  }
-
 .main-footer li{
   display: inline;
   margin-left: 1em;
@@ -100,16 +96,27 @@ p{
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .film-description {
-  background-color: white;
   display: flex;
   flex-direction: row;
-  flex-flow: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
   }
+
+.film-description header{
+  /*max-width: 512px;*/
+}
+
+.film-text {
+  /*max-width: 512px;*/
+}
 
 .film-headline-image {
   border-bottom: 10px solid #5d6063;
@@ -144,14 +151,14 @@ p{
   font-style: italic;
 }
 
-.film-description aside{
+.film-series{
   margin-top: 40px;
   padding: 10px;
   background-color: #efefef;
   margin-bottom: 20px;
 }
 
-.film-description aside h2{
+.film-series h2{
   font-size: 1.5em;
   line-height: 1.3em;
 }
@@ -198,13 +205,20 @@ p{
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {}
+@media only screen and (max-width: 400px) {
 
-  /* Tablet Styles */
+}
+
+/* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+  .film-description {
+    max-width: 650px;
+  }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-
+  .film-description {
+    flex-wrap: nowrap;
+  }
 }
