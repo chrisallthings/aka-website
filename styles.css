@@ -217,7 +217,7 @@ hr {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
 }
@@ -271,7 +271,7 @@ hr {
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 500px) and (max-width: 960px) {
   .logo {
     width: 60px;
     height: 52px;
@@ -292,7 +292,12 @@ hr {
     margin-top: 2em;
     max-width: 650px;
   }
+  .filmteaser {
+    width: 48%;
+  }
 }
+
+
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
@@ -315,5 +320,9 @@ hr {
   .film-description {
     margin-top: 2em;
     max-width: 650px;
+  }
+
+  .filmteaser {
+    width: 24.5%;
   }
 }
