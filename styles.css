@@ -177,9 +177,6 @@ line-height: 1em;
 .film-facts li{
   display: inline;
 }
-.film-facts li:last-of-type{
-  display: block;
-}
 
 .film-series{
   padding-left: 10px;
