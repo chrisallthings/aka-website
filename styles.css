@@ -137,13 +137,12 @@ hr {
 }
 
 .film-headline-image {
-  border-bottom: 10px solid #5d6063;
   margin-bottom: 10px;
-  padding-bottom: 0.6em;
 }
 
 .film-headline-image h1 {
-  padding-top: 0.2em;
+  border-bottom: 10px solid #5d6063;
+  margin-bottom: 0.6em;
 }
 
 .film-headline-image img {
