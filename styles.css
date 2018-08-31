@@ -10,7 +10,7 @@ body{
 
   color:#5d6063;
   font-family: 'Open Sans', sans-serif;
-  background-color: #FEFEFE;
+  background-color: #F7F7F7;
 
   /*Make Footer Stick to bottom*/
   display: flex;
@@ -167,14 +167,14 @@ line-height: 1em;
   text-transform: uppercase;
 }
 
-.film-facts{
+.facts{
   font-size: 0.8em;
   line-height: 1.5em;
   font-style: italic;
   margin-bottom: 0.5em;
 }
 
-.film-facts li{
+.facts li{
   display: inline;
 }
 
@@ -204,15 +204,20 @@ line-height: 1em;
 
 .filmteaser {
   margin-top: 20px;
-  position: relative;
   max-width: 350px; /*change that*/
+  background-color: white;
+  padding: 20px;
 
+}
+
+.teaser-header{
+  position: relative;
 }
 
 .filmteaser img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-  width: inherit;
+  width: 100%;
 }
 
 .filmteaser img:hover {
@@ -220,7 +225,7 @@ line-height: 1em;
   filter: none;
 }
 
-.teaser-description {
+.teaser-title {
   background-color: #FFF139;
   padding: 5px;
   color: #000;
@@ -228,6 +233,10 @@ line-height: 1em;
   bottom: 20px;
   max-width: 90%;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+right: 0;
 }
 
 .pre-headline {
