@@ -1,3 +1,17 @@
+/*
+COLORS
+BACKGROUND GREY1: #F7F7F7
+BACKGROUND GREY2: #EEEEEE
+BACKGROUND DARK: #1A1A1A
+BACKGROUND DARK2: #2B2B2B
+
+BORDER GREY: #eee;
+
+WHITE: #FFF
+
+YELLOW-MAYBE: #F4D35E
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +48,8 @@ h2 {
 }
 
 p{
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
+  line-height: 1.8em;
 }
 
 hr {
@@ -54,7 +69,7 @@ hr {
   justify-content: space-between;
   width: 100%;
   height: 60px;
-  border-bottom: 1px solid #5d6063;
+  border-bottom: 1px solid #eee;
   background-color: white;
   padding-left: 10px;
   padding-right: 10px;
@@ -109,7 +124,7 @@ hr {
 }
 
 .page{
-  margin-top: 60px; /*height of page main header*/
+  margin-top: 50px; /*height of page main header MINUS padding of article header*/
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
@@ -128,25 +143,31 @@ hr {
   margin-right: auto;
   }
 
-  .film-description header {
-    margin-bottom: 10px;
-    border-bottom: 10px solid #FFF139;
-    width: 100%;
-  }
+.film-description header {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 10px;
+}
 
-  .film-description header h1 {
+.title-time {
+  margin-bottom: 10px;
+  border-bottom: 10px solid #FFF139;
+  width: 100%;
+}
+
+.title-time h1 {
     margin-bottom: 0.2em;
   }
-
 
 .film-image{
   margin-bottom: 0.5em;
 }
 
 .film-image img{
-max-width: 100%;
+  max-width: 100%;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .film-image img:hover {
@@ -155,9 +176,9 @@ max-width: 100%;
 }
 
 .film-image figcaption{
-font-size: 0.5em;
-font-style: italic;
-line-height: 1em;
+  font-size: 0.5em;
+  font-style: italic;
+  line-height: 1em;
 }
 
 .playtime {
@@ -171,7 +192,6 @@ line-height: 1em;
   font-size: 0.8em;
   line-height: 1.5em;
   font-style: italic;
-  margin-bottom: 0.5em;
 }
 
 .facts li{
@@ -200,9 +220,6 @@ line-height: 1em;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-
-
-  
 }
 
 .filmteaser {
@@ -210,7 +227,6 @@ line-height: 1em;
   max-width: 350px; /*change that*/
   background-color: white;
   padding: 20px;
-
 }
 
 .teaser-header{
@@ -219,7 +235,7 @@ line-height: 1em;
 
 .filmteaser img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+  filter: grayscale(100%);
   width: 100%;
 }
 
@@ -239,7 +255,7 @@ line-height: 1em;
   margin-left: auto;
   margin-right: auto;
   left: 0;
-right: 0;
+  right: 0;
 }
 
 .pre-headline {
