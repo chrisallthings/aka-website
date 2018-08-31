@@ -128,44 +128,57 @@ hr {
   margin-right: auto;
   }
 
-.film-description header{
-  /*max-width: 512px;*/
+  .film-description header {
+    margin-bottom: 10px;
+    border-bottom: 10px solid #FFF139;
+    width: 100%;
+  }
+
+  .film-description header h1 {
+    margin-bottom: 0.2em;
+  }
+
+
+.film-image{
+  margin-bottom: 0.5em;
 }
 
-.film-text {
-  /*max-width: 512px;*/
-}
-
-.film-headline-image {
-  margin-bottom: 10px;
-}
-
-.film-headline-image h1 {
-  border-bottom: 10px solid #5d6063;
-  margin-bottom: 0.6em;
-}
-
-.film-headline-image img {
-  max-width: 100%;
+.film-image img{
+max-width: 100%;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
 
-.film-headline-image img:hover {
+.film-image img:hover {
   -webkit-filter: none;
   filter: none;
 }
 
+.film-image figcaption{
+font-size: 0.5em;
+font-style: italic;
+line-height: 1em;
+}
+
 .playtime {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   display: block;
+  text-transform: uppercase;
 }
 
 .film-facts{
   font-size: 0.8em;
   line-height: 1.5em;
   font-style: italic;
+  margin-bottom: 0.5em;
+}
+
+.film-facts li{
+  display: inline;
+}
+.film-facts li:last-of-type{
+  display: block;
 }
 
 .film-series{
@@ -217,6 +230,7 @@ hr {
   position: absolute;
   bottom: 20px;
   max-width: 90%;
+  text-transform: uppercase;
 }
 
 .pre-headline {
@@ -250,6 +264,7 @@ hr {
   }
 
   .film-description {
+    margin-top: 2em;
     max-width: 650px;
   }
 }
@@ -257,32 +272,23 @@ hr {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .logo {
-    width: 140px;
-    height: 105px;
+    width: 60px;
+    height: 52px;
   }
   .main-header {
-    height: 180px;
-    padding:30px;
+    height: 92px;
+    padding:20px;
   }
 
   .page{
-    margin-top: 180px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
+    margin-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
   }
 
   .film-description {
-    flex-wrap: nowrap;
-    max-width: 1200px;
-  }
-
-  .film-description header {
-    max-width: 580px;
-  }
-
-  .film-text{
-    max-width: 580px;
-    margin-left: 30px;
+    margin-top: 2em;
+    max-width: 650px;
   }
 }
