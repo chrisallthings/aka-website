@@ -125,6 +125,10 @@ hr {
   width: 80%
 }
 
+.sub-level{
+  position: relative;
+}
+
 .sub-level ul{
   font-size: 0.9em;
   list-style: none;
@@ -132,6 +136,9 @@ hr {
   position: absolute;
   background-color: white;
   padding: 10px;
+  top: 20px;
+  left: 0px;
+  width: 170px;
 }
 
 .sub-level li{
