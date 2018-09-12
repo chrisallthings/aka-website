@@ -84,6 +84,13 @@ hr {
   z-index: 2;
 }
 
+/*This is only added with Java script if the toggle burger menua is klicked*/
+  .main-header.openNav {
+    background-color: #FFF139;
+    height: 100%;
+    opacity: 0.95;
+  }
+
 .logo {
   display: block;
   width: 40px;
@@ -96,6 +103,13 @@ hr {
   justify-content: space-around;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.main-nav.openNav{
+  flex-flow: column;
+  font-size: 2em;
+  line-height: normal;
+  text-align: center;
 }
 
 .main-nav a{
@@ -125,6 +139,11 @@ hr {
   width: 80%
 }
 
+.top-level.openNav{
+  display: initial;
+  width: 100%;
+}
+
 .sub-level{
   position: relative;
 }
@@ -139,6 +158,18 @@ hr {
   top: 20px;
   left: 0px;
   width: 170px;
+}
+
+.sub-level.openNav ul{
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-color: inherit;
+  font-size: 0.6em;
+  top:0px;
+  width: 100%;
+  padding: 0px;
 }
 
 .sub-level li{
@@ -344,6 +375,7 @@ padding-bottom: 5px;
     width: 60px;
     height: 52px;
   }
+
   .main-header {
     height: 92px;
     padding:20px;

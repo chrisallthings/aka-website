@@ -10,13 +10,15 @@
     <link rel='stylesheet' href='styles.css'/>
   </head>
   <body>
-    <header class="main-header">
+  <script src="script.js"></script>
+    <header class="main-header" id="main-header">
         <a href="#"><img src="images/logo.svg" class="logo"/></a>
-        <nav class="main-nav">
-          <ul class="top-level">
+        <nav class="main-nav" id="mainNav">
+          <ul class="top-level" id="topLevelNav">
             <li><a href="#">Home</a></li>
             <li><a href="#">News</a></li>
-            <li class="sub-level"><a href="#">Programm</a>
+            <li class="sub-level" id="subLevelNav">
+              <a href="#">Programm</a>
               <ul>
                 <li><a href="#">Aktuelles Programm</a></li>
                 <li><a href="#">Einzelfilme</a></li>
@@ -29,10 +31,10 @@
             <li><a href="#">Über Uns</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
-          <a href="#" class="burger">
-            <img src="images/burger.svg">
-          </a>
         </nav>
+        <a class="burger" onclick="openOrClosenav()">
+          <img src="images/burger.svg">
+        </a>
     </header>
 
     <div class="page">
