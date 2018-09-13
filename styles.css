@@ -123,7 +123,7 @@ hr {
 
 .main-nav a:hover{
   text-decoration: line-through;
-  color: #FFF139;
+  background-color: #FFF139;
 }
 
 .burger{
@@ -142,6 +142,11 @@ hr {
 .top-level.openNav{
   display: initial;
   width: 100%;
+}
+
+.top-level.openNav a:hover{
+  background-color: #000;
+  color: #FFF139;
 }
 
 .sub-level{
@@ -179,6 +184,10 @@ padding-bottom: 5px;
 .sub-level:hover ul{
   cursor: pointer;
   display: initial;
+}
+
+.sub-level.openNav:hover ul{
+  display: flex;
 }
 
 .main-footer {
