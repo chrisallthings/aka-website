@@ -1,8 +1,17 @@
 function openOrClosenav() {
+    var v = document.getElementById("menueSwitch");
     var w = document.getElementById("subLevelNav");
     var x = document.getElementById("main-header");
     var y = document.getElementById("topLevelNav");
     var z = document.getElementById("mainNav");
+
+    if (v.className === "closed") { /*open Menue - add the responsive class*/
+        v.className = "opened";
+        v.src="images/closeX.svg";
+    } else {
+        v.className = "closed";
+        v.src="images/burger.svg"; /*close menue: remove the responsive class*/
+    }
 
     if (w.className === "sub-level") { /*open Menue - add the responsive class*/
         w.className += " openNav";

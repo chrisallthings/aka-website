@@ -132,6 +132,10 @@ hr {
   display: none;
 }
 
+.burger:hover{
+  cursor: pointer;
+}
+
 .top-level{
   list-style: none;
   display: flex;
