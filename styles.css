@@ -51,7 +51,8 @@ h2 {
 
 p{
   margin-bottom: 0.8em;
-  line-height: 1.8em;
+  line-height: 1.5em;
+  font-size: 1em;
 }
 
 hr {
@@ -204,6 +205,8 @@ padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
 
+  margin-top: 50px;
+
   font-size: 0.8em;
   line-height: 1.5em;
 
@@ -262,6 +265,7 @@ padding-bottom: 5px;
   margin-bottom: 10px;
   border-bottom: 10px solid #FFF139;
   width: 100%;
+  text-align: left;
 }
 
 .title-time h1 {
@@ -288,6 +292,7 @@ padding-bottom: 5px;
   font-size: 0.5em;
   font-style: italic;
   line-height: 1em;
+  text-align: left;
 }
 
 .playtime {
@@ -302,6 +307,7 @@ padding-bottom: 5px;
   font-size: 0.8em;
   line-height: 1.5em;
   font-style: italic;
+  text-align: left;
 }
 
 .facts li{
@@ -336,20 +342,24 @@ padding-bottom: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: 1280px;
+  align-content: stretch;
+  max-width: 1600px;
 }
 
 .filmteaser-wrapper{
+  display: flex;
 }
 
 .filmteaser {
   background-color: white;
   padding: 20px;
   margin: 10px;
+  align-items: stretch;
 }
 
 .teaser-header{
   position: relative;
+  margin-bottom: 10px;
 }
 
 .filmteaser img {
@@ -378,6 +388,34 @@ padding-bottom: 5px;
   font-family: 'Oswald', sans-serif;
 }
 
+.shown{
+  background-color: #eeeeee;
+}
+
+.button-wrapper{
+    margin-top: 15px;
+    position: relative;
+}
+
+.button {
+  display: block;
+  max-width: 300px;
+  padding: 8px;
+  color: #000;
+  border: 2px solid #000;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button:hover{
+  background-color: #FFF139;
+}
+
 .pre-headline {
   font-size: 0.8em;
   line-height: 1.5em;
@@ -397,8 +435,8 @@ padding-bottom: 5px;
   }
 }
 
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+/* Small Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 600px) {
   .logo {
     width: 60px;
     height: 52px;
@@ -420,8 +458,13 @@ padding-bottom: 5px;
     margin-top: 2em;
     max-width: 650px;
   }
+
+  .teaser-list{
+    justify-content: center;
+  }
+
   .filmteaser-wrapper {
-    width: 48%;
+    max-width: 410px;
   }
 
   .main-nav{
@@ -429,9 +472,17 @@ padding-bottom: 5px;
   }
   .burger{
     display: initial;
+    width: 60px;
   }
   .top-level{
     display: none;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  .filmteaser-wrapper {
+    width: 48%;
   }
 }
 
@@ -461,6 +512,13 @@ padding-bottom: 5px;
   }
 
   .filmteaser-wrapper {
-    width: 24.5%;
+    width: 33.3%;
+  }
+}
+
+/* Big Desktop Styles */
+@media only screen and (min-width: 1200px) {
+  .filmteaser-wrapper {
+      width: 24.5%;
   }
 }
