@@ -9,6 +9,7 @@ BORDER GREY: #eee;
 
 WHITE: #FFF
 
+YELLOW-FOR-NOW #FFF139
 YELLOW-MAYBE: #F4D35E
 */
 
@@ -34,6 +35,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
+  /*font-family: 'Poppins', sans-serif;*/
   font-family: 'Oswald', sans-serif;
   line-height: 1.2em;
   text-transform: uppercase;
@@ -82,15 +84,114 @@ hr {
   z-index: 2;
 }
 
+/*This is only added with Java script if the toggle burger menua is klicked*/
+  .main-header.openNav {
+    background-color: #FFF139;
+    height: 100%;
+    opacity: 0.95;
+  }
+
 .logo {
   display: block;
   width: 40px;
   height: 30px;
 }
 
-.main-nav img{
+.main-nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main-nav.openNav{
+  flex-flow: column;
+  font-size: 2em;
+  line-height: normal;
+  text-align: center;
+}
+
+.main-nav a{
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+}
+
+.main-nav a:hover{
+  text-decoration: line-through;
+  background-color: #FFF139;
+}
+
+.burger{
   width: 30px;
   height: 30px;
+  display: none;
+}
+
+.burger:hover{
+  cursor: pointer;
+}
+
+.top-level{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%
+}
+
+.top-level.openNav{
+  display: initial;
+  width: 100%;
+}
+
+.top-level.openNav a:hover{
+  background-color: #000;
+  color: #FFF139;
+}
+
+.sub-level{
+  position: relative;
+}
+
+.sub-level ul{
+  font-size: 0.9em;
+  list-style: none;
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  top: 20px;
+  left: 0px;
+  width: 170px;
+}
+
+.sub-level.openNav ul{
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-color: inherit;
+  font-size: 0.6em;
+  top:0px;
+  width: 100%;
+  padding: 0px;
+}
+
+.sub-level li{
+padding-bottom: 5px;
+}
+
+.sub-level:hover ul{
+  cursor: pointer;
+  display: initial;
+}
+
+.sub-level.openNav:hover ul{
+  display: flex;
 }
 
 .main-footer {
@@ -160,6 +261,7 @@ hr {
     margin-bottom: 0.2em;
   }
 
+
 .film-image{
   margin-bottom: 0.5em;
 }
@@ -183,9 +285,10 @@ hr {
 
 .playtime {
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.3em;
   display: block;
   text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
 }
 
 .facts{
@@ -256,6 +359,7 @@ hr {
   margin-right: auto;
   left: 0;
   right: 0;
+  font-family: 'Oswald', sans-serif;
 }
 
 .pre-headline {
@@ -264,18 +368,26 @@ hr {
   font-style: italic;
 }
 
-
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-
+  .main-nav{
+    justify-content: flex-end;
+  }
+  .burger{
+    display: initial;
+  }
+  .top-level{
+    display: none;
+  }
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 500px) and (max-width: 960px) {
+@media only screen and (min-width: 401px) and (max-width: 960px) {
   .logo {
     width: 60px;
     height: 52px;
   }
+
   .main-header {
     height: 92px;
     padding:20px;
@@ -294,6 +406,16 @@ hr {
   }
   .filmteaser {
     width: 48%;
+  }
+
+  .main-nav{
+    justify-content: flex-end;
+  }
+  .burger{
+    display: initial;
+  }
+  .top-level{
+    display: none;
   }
 }
 
